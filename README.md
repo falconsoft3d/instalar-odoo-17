@@ -8,6 +8,10 @@ Marlon Falcón Hernández | Madrid, España
 - Github: https://github.com/falconsoft3d
 - linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
 
+
+--config=/Users/marlonfalcon/Documents/odoo/odoo-16/odoo/debian/odooee.conf -u base_bim_2 --i18n-overwrite
+
+
 ## 0- Creamos una cuenta en Digital Ocean
 https://m.do.co/c/7f5c3af8d6bb
 
