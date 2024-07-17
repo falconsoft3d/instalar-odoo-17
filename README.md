@@ -78,9 +78,16 @@ chown odoo: /opt/backup/ -R
 
 ## 6- Instalar wkhtmltopdf para generar PDF en odoo
 ```
-sudo apt install wkhtmltopdf
+# sudo apt-get remove wkhtmltopdf
+sudo apt-get install -y xfonts-75dpi
+
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
+sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
+
 wkhtmltopdf --version
-reboot
 ```
 
 # 7- Configuramos el conf de odoo
