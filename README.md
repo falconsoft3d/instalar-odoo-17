@@ -33,6 +33,14 @@ echo "deb http://nightly.odoo.com/17.0/nightly/deb/ ./" >> /etc/apt/sources.list
 apt-get update && apt-get install odoo
 ```
 
+
+## 2- Instalamos odoo 17.0
+```linux
+wget -O - https://nightly.odoo.com/odoo.key | sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
+echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/17.0/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
+sudo apt-get update && sudo apt-get install odoo
+```
+
 ```
 apt-get install node-less
 ```
