@@ -33,6 +33,10 @@ echo "deb http://nightly.odoo.com/17.0/nightly/deb/ ./" >> /etc/apt/sources.list
 apt-get update && apt-get install odoo
 ```
 
+```linux
+sudo apt-get update
+sudo apt-get upgrade odoo
+```
 
 ## 2- Instalamos odoo 17.0
 ```linux
